@@ -10,7 +10,11 @@ const Navbar:React.FC = () => {
       <NavLink to="/shop" className="nav-links" id='Shop-Link'>Shop</NavLink>
       <NavLink to="/about" className="nav-links" id='About-Link'>About</NavLink>
       <NavLink to="/contact" className="nav-links" id='Contact-Link'>Contact</NavLink>
-      <i className='bx bxs-shopping-bag' id='cart-icon'></i>
+      
+      <div className='nav-icons-ctn'>
+      <i className='bx bx-search' title='search'></i>
+      <i className='bx bxs-shopping-bag'></i>
+      </div>
     </div>
   </>)
 }

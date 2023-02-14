@@ -22,11 +22,34 @@
     
 }
 
-#cart-icon{
+.nav-icons-ctn{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50%;
+}
+
+.bxs-shopping-bag{
     font-size: 2.5rem;
     cursor: pointer;
-    margin-left: auto;
     
+}
+
+.bxs-shopping-bag:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    padding: 5%;
+}
+
+.bx-search{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.bx-search:hover{
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    padding: 5%;
 }
 
 
