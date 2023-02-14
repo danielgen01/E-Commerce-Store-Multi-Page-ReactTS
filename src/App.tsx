@@ -16,6 +16,7 @@ function App() {
   return (
  <BrowserRouter>
  <Header />
+ <Navbar />
  <Routes>
  <Route path='/' element={<Home />} />
  <Route path='/shop' element={<Shop />} />
@@ -24,7 +25,7 @@ function App() {
  <Route path="*" element={<NotFound />} />
  </Routes>
 
- <Navbar />
+ 
  
  </BrowserRouter>
 

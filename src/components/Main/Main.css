@@ -1,0 +1,33 @@
+.shop-items-ctn{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    gap: 3%;
+}
+
+.item-ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3%;
+    height: 35vh;
+    width: 30%;
+}
+
+.item-ctn:hover{
+ border:1px solid black;
+}
+
+.product-img{
+    width:auto;
+    height: 60%;
+}
+
+.input-box-products-page{
+    text-align: center;
+    width: 10%;
+}
