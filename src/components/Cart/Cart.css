@@ -1,5 +1,6 @@
 .Cart{
     overflow: hidden;
+    
 }
 
 .cart-background{
@@ -9,6 +10,7 @@
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     overflow: hidden;
+   
   
 }
 
@@ -20,4 +22,10 @@
     border-radius: 5rem;
     margin-right: -3%;
     overflow: hidden;
+    
+}
+
+.bx-x{
+    font-size: 5rem;
+    cursor: pointer;
 }

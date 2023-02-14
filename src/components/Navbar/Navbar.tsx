@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import {Link,NavLink} from "react-router-dom" ;
+import useCart from '../../hooks/useCart';
 
 const Navbar:React.FC = () => {
 
+  const {isCartOpen,toggleCart} = useCart();
   const [isSearchIconClicked,setIsSearchIconClicked] = useState<boolean>(false);
 
   const handleSearchIconClick = () =>{
@@ -23,7 +25,7 @@ const Navbar:React.FC = () => {
       />
       <div className='nav-icons-ctn'>
       <i className='bx bx-search' title='search' onClick={handleSearchIconClick}></i>
-      <i className='bx bxs-shopping-bag'></i>
+      <i className='bx bxs-shopping-bag' onClick={toggleCart}></i>
       </div>
     </div>
   </>)
