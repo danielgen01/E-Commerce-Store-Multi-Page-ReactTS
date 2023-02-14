@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/Header';
@@ -11,12 +11,19 @@ import Shop from './pages/Shop';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import Cart from './components/Cart/Cart';
+
 
 function App() {
+ 
+ 
+
   return (
+    
  <BrowserRouter>
  <Header />
  <Navbar />
+ <Cart />
  <Routes>
  <Route path='/' element={<Home />} />
  <Route path='/shop' element={<Shop />} />
@@ -24,6 +31,9 @@ function App() {
  <Route path='/contact' element={<Contact />} />
  <Route path="*" element={<NotFound />} />
  </Routes>
+
+
+
 
  
  
