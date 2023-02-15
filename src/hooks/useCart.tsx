@@ -10,7 +10,7 @@ const useCart = () => {
 
   return {
     isCartOpen,
-    toggleCart,
+    toggleCart
     
   };
 };
