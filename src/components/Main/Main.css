@@ -44,6 +44,23 @@
     cursor: pointer;
 }
 
+/* CART ADD CONTAINER | OPENS WHEN USER CLICKS CARD ADD ICON  */
+
+.cart-add-ctn{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.cart-add-box{
+    position: absolute;
+    top: 25%;
+    left:30% ;
+    background-color: #ffffff;
+    width: 50rem;
+    height: 40rem;
+}
 
 
 /* Media Queries */
