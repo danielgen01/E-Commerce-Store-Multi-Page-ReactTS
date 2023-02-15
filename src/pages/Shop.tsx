@@ -4,7 +4,18 @@ import CartAddBox from '../components/CartAddBox/CartAddBox';
 
 const Shop = () => {
   const [isCartAddContainerOpen,setIsCartContainerOpen] = useState<boolean>(false);
+  const [quantity,setQuantity] = useState(1);
 
+  const handleMinusClick = () => {
+    if (quantity > 1) {
+      setQuantity(quantity -1);
+    }
+  }
+
+  const handlePlusClick = () => {
+    if(quantity < 10)
+    setQuantity(quantity + 1);
+  }
 
   const toggleCartAddContainer = () => {
 
@@ -23,6 +34,9 @@ const Shop = () => {
   <CartAddBox
    isCartAddContainerOpen={isCartAddContainerOpen}
    toggleCartAddContainer={toggleCartAddContainer}
+   quantity={quantity}
+   handleMinusClick ={handleMinusClick}
+   handlePlusClick ={handlePlusClick}
   />
       
     </>
