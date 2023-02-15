@@ -5,14 +5,14 @@ import { type } from '@testing-library/user-event/dist/type';
 
 type NavbarProps = {
   toggleCart: () => void;
-  handleSearchIconClick: () => void;
+  toggleSearchbar: () => void;
   isSearchIconClicked:any;
 }
 
 
 
 
-const Navbar:React.FC<NavbarProps> = ({ toggleCart, handleSearchIconClick, isSearchIconClicked }) => {
+const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchIconClicked }) => {
 
   
   
@@ -30,7 +30,7 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, handleSearchIconClick, isSea
       />
       </div>
       <div className='nav-icons-ctn'>
-      <i className='bx bx-search' title='search' onClick={handleSearchIconClick}></i>
+      <i className='bx bx-search' title='search' onClick={toggleSearchbar}></i>
       <i className='bx bxs-shopping-bag' onClick={toggleCart}></i>
       </div>
     </div>

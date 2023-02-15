@@ -19,13 +19,18 @@ const App:React.FC = () => {
   
   const [isCartOpen,setIsCartOpen] = useState<boolean>(false);
   const [isSearchIconClicked,setIsSearchIconClicked] = useState<boolean>(false);
-
+  const [isCarticonClicked,setIsCartIconClicked] = useState<boolean>(false);
+  
   const toggleCart = () => {
       setIsCartOpen(!isCartOpen);
   };
 
-  const handleSearchIconClick = () =>{
+  const toggleSearchbar = () =>{
     setIsSearchIconClicked(!isSearchIconClicked);
+  }
+
+  const toggleCartAddContainer = () => {
+    setIsCartIconClicked(!isCarticonClicked);
   }
  
  
@@ -37,7 +42,7 @@ const App:React.FC = () => {
  <Navbar
   toggleCart={toggleCart}
   isSearchIconClicked={isSearchIconClicked}
-   handleSearchIconClick={handleSearchIconClick}
+   toggleSearchbar={toggleSearchbar}
    />
 
  <Cart
