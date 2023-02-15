@@ -20,14 +20,29 @@
     background-color: white;
     float: right;
     border-radius: 5rem;
-    margin-right: -3%;
+    margin-right: -30%;
     overflow: hidden;
+    animation: slides 0.5s normal;
+    animation-fill-mode: forwards;
     
 }
+
+
+
+
+/* CART OPEN ANIMATION */
+
+@keyframes slides {
+from {margin-right: calc(0% - px)}
+to {margin-right: -3%;}
+}
+
 /*Close cart icon */
 .bx-x{  
     font-size: 5rem;
     cursor: pointer;
+    float: right;
+    margin-right: 15%;
 }
 
 .bx-x:hover{ 
