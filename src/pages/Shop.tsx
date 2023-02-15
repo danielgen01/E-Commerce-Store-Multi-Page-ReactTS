@@ -13,13 +13,17 @@ const Shop = () => {
   }
 
   const handlePlusClick = () => {
-    if(quantity < 10)
+    if(quantity < 10){
     setQuantity(quantity + 1);
+    }else{
+      alert('max quantity reached')
+    }
   }
 
   const toggleCartAddContainer = () => {
 
     setIsCartContainerOpen(!isCartAddContainerOpen);
+    setQuantity(1);
   }
 
 
