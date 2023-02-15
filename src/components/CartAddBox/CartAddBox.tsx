@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./CartAddBox.css"
 
 type CartAddBoxProps = {
     toggleCartAddContainer: () => void;

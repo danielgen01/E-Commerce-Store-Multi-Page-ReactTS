@@ -44,40 +44,7 @@
     cursor: pointer;
 }
 
-/* CART ADD CONTAINER | OPENS WHEN USER CLICKS CARD ADD ICON  */
 
-.cart-add-ctn{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-}
-.cart-add-box{
-    position: absolute;
-    top: 25%;
-    left:30% ;
-    background-color: #ffffff;
-    width: 50rem;
-    height: 40rem;
-    border-radius: 5rem;
-}
-
-/* Close CART BUTTON ICON */
-
-#close-add-cart-box-icon{
-    
-    font-size: 5rem;
-    cursor: pointer;
-    float: right;
-    margin-right: 5%;
-}
-
-#close-add-cart-box-icon:hover{
-    color: red;
-    transform: rotate(90deg) scale(1.5);
-    transition: 500ms;
-}
 
 /* Media Queries */
 
