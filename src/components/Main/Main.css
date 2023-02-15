@@ -60,8 +60,24 @@
     background-color: #ffffff;
     width: 50rem;
     height: 40rem;
+    border-radius: 5rem;
 }
 
+/* Close CART BUTTON ICON */
+
+#close-add-cart-box-icon{
+    
+    font-size: 5rem;
+    cursor: pointer;
+    float: right;
+    margin-right: 5%;
+}
+
+#close-add-cart-box-icon:hover{
+    color: red;
+    transform: rotate(90deg) scale(1.5);
+    transition: 500ms;
+}
 
 /* Media Queries */
 

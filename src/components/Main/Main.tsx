@@ -3,10 +3,10 @@ import './Main.css'
 
 type MainProps = {
   toggleCartAddContainer: () => void;
-  isCartAddContainerOpen:boolean
+  isCartAddContainerOpen:boolean;
 }
 
-const Main:React.FC<MainProps> = ({ toggleCartAddContainer, isCartAddContainerOpen }) => {
+const Main:React.FC<MainProps> = ({toggleCartAddContainer, isCartAddContainerOpen}) => {
   return (
     <>
     <div className='Main'>
@@ -67,13 +67,7 @@ const Main:React.FC<MainProps> = ({ toggleCartAddContainer, isCartAddContainerOp
 
       </div>
 
-      {/* CART ADD CONTAINER */}
-      <div className='cart-add-ctn' style={{display: isCartAddContainerOpen? "block" : "none"}}>
-      <div className='cart-add-box'>
-
-      </div>
-
-      </div>
+      
     </div>
   </>)
 }

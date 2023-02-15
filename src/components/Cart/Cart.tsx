@@ -18,7 +18,7 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart }) => {
         <div className='cart-box'>
          <div className='cart-content'>
             <h2 style={{textAlign:"center"}}>Cart</h2>
-            <i className='bx bx-x' onClick={toggleCart}></i>
+            <i className='bx bx-x' id='close-cart-icon' onClick={toggleCart}></i>
          </div>
 
         </div>
