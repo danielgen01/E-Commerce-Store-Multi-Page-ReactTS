@@ -14,7 +14,19 @@ import NotFound from './pages/NotFound';
 import Cart from './components/Cart/Cart';
 
 
-function App() {
+const App:React.FC = () => {
+
+  
+  const [isCartOpen,setIsCartOpen] = useState<boolean>(false);
+  const [isSearchIconClicked,setIsSearchIconClicked] = useState<boolean>(false);
+
+  const toggleCart = () => {
+      setIsCartOpen(!isCartOpen);
+  };
+
+  const handleSearchIconClick = () =>{
+    setIsSearchIconClicked(!isSearchIconClicked);
+  }
  
  
 
@@ -22,8 +34,17 @@ function App() {
     
  <BrowserRouter>
  <Header />
- <Navbar />
- <Cart />
+ <Navbar
+  toggleCart={toggleCart}
+  isSearchIconClicked={isSearchIconClicked}
+   handleSearchIconClick={handleSearchIconClick}
+   />
+
+ <Cart
+  isCartOpen={isCartOpen}
+   toggleCart={toggleCart}
+   />
+   
  <Routes>
  <Route path='/' element={<Home />} />
  <Route path='/shop' element={<Shop />} />

@@ -1,13 +1,20 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import {Link,NavLink} from "react-router-dom" ;
-import useCart from '../../hooks/useCart';
-import useSearchbar from '../../hooks/useSearchbar';
+import { type } from '@testing-library/user-event/dist/type';
 
-const Navbar:React.FC = () => {
+type NavbarProps = {
+  toggleCart: () => void;
+  handleSearchIconClick: () => void;
+  isSearchIconClicked:any;
+}
 
-  const {isCartOpen,toggleCart} = useCart();
-  const {isSearchIconClicked,handleSearchIconClick} = useSearchbar();
+
+
+
+const Navbar:React.FC<NavbarProps> = ({ toggleCart, handleSearchIconClick, isSearchIconClicked }) => {
+
+  
   
     return (
     <>

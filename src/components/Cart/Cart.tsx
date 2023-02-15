@@ -1,14 +1,15 @@
+import { type } from 'os'
 import React, { useState } from 'react'
 import "./Cart.css"
-import useCart from '../../hooks/useCart';
+
+type CartProps = {
+  isCartOpen: boolean;
+  toggleCart: () => void;
+}
 
 
 
-const Cart:React.FC = () => {
-
-    const {isCartOpen,toggleCart} = useCart();
-
-   
+const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart }) => {
 
 
   return (
