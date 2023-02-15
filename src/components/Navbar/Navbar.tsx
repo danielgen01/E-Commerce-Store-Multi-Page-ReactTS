@@ -6,13 +6,13 @@ import { type } from '@testing-library/user-event/dist/type';
 type NavbarProps = {
   toggleCart: () => void;
   toggleSearchbar: () => void;
-  isSearchIconClicked:any;
+  isSearchbarOpen:any;
 }
 
 
 
 
-const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchIconClicked }) => {
+const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbarOpen }) => {
 
   
   
@@ -23,7 +23,7 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchIco
       <NavLink to="/shop" className="nav-links" id='Shop-Link'>Shop</NavLink>
       <NavLink to="/about" className="nav-links" id='About-Link'>About</NavLink>
       <NavLink to="/contact" className="nav-links" id='Contact-Link'>Contact</NavLink>
-      <div className='top-page-search-ctn' style={{display:isSearchIconClicked? "flex" : "none"}}>
+      <div className='top-page-search-ctn' style={{display:isSearchbarOpen? "flex" : "none"}}>
       <input type="text"
       className='search-input-field'
       placeholder='Wonach suchst du ...?'
