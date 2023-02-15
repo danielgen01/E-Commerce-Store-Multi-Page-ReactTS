@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import Main from '../components/Main/Main'
 import CartAddBox from '../components/CartAddBox/CartAddBox';
+import { StringMappingType } from 'typescript';
+
 
 const Shop = () => {
   const [isCartAddContainerOpen,setIsCartContainerOpen] = useState<boolean>(false);
   const [quantity,setQuantity] = useState(1);
-
+ 
   const handleMinusClick = () => {
     if (quantity > 1) {
       setQuantity(quantity -1);
@@ -16,7 +18,7 @@ const Shop = () => {
     if(quantity < 10){
     setQuantity(quantity + 1);
     }else{
-      alert('max quantity reached')
+      alert('max quantity reached ')
     }
   }
 
@@ -41,6 +43,9 @@ const Shop = () => {
    quantity={quantity}
    handleMinusClick ={handleMinusClick}
    handlePlusClick ={handlePlusClick}
+   
+
+   
   />
       
     </>

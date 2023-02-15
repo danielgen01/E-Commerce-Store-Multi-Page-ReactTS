@@ -7,6 +7,8 @@ type MainProps = {
 }
 
 const Main:React.FC<MainProps> = ({toggleCartAddContainer, isCartAddContainerOpen}) => {
+ 
+  
   return (
     <>
     <div className='Main'>
@@ -17,7 +19,7 @@ const Main:React.FC<MainProps> = ({toggleCartAddContainer, isCartAddContainerOpe
           <img src='https://files.refurbed.com/ii/iphone-12-1607327724.jpg?t=resize&h=600&w=800'
           className='product-img' />
           <h2>699€</h2>
-          <i className='bx bx-cart-add' onClick={toggleCartAddContainer} ></i>
+          <i className='bx bx-cart-add' onClick={toggleCartAddContainer}></i>
         </div>
 
          {/* PRODUCT 2 */}

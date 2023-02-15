@@ -7,6 +7,7 @@ type CartAddBoxProps = {
     handlePlusClick: () => void;
     handleMinusClick: () => void;
     quantity:number;
+    
   }
 
 const CartAddBox:React.FC<CartAddBoxProps> = (
@@ -16,6 +17,7 @@ const CartAddBox:React.FC<CartAddBoxProps> = (
     }
     
     ) => {
+
   return (
     <>
 
@@ -28,7 +30,7 @@ const CartAddBox:React.FC<CartAddBoxProps> = (
      <div className='img-ctn col-6 col-s-6'>
     <img src='https://files.refurbed.com/ii/iphone-12-1607327724.jpg?t=resize&h=300&w=300' />
     </div>
-    <div className='product-infos-ctn col-3 col-s-3'>
+    <div className='product-infos-ctn '>
         <h1>iPhone 12</h1>
         <h3>699€</h3>
         <input type="number" 

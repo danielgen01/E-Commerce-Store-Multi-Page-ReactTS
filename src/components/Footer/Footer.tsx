@@ -5,7 +5,10 @@ const Footer = () => {
   return (
     <>
     
-    <div>Footer</div>
+    <div className='Footer'>
+
+      <p style={{textAlign:"center"}}>Created by Daniel Gendik</p>
+    </div>
  </> )
 }
 
