@@ -24,8 +24,14 @@
     overflow: hidden;
     
 }
-
-.bx-x{
+/*Close cart icon */
+.bx-x{  
     font-size: 5rem;
     cursor: pointer;
+}
+
+.bx-x:hover{ 
+    color: red;
+    transform: rotate(90deg) scale(1.5);
+    transition: 500ms;
 }
