@@ -70,7 +70,7 @@ const App:React.FC = () => {
 
   
  
- <Footer />
+
  </BrowserRouter>
 
     

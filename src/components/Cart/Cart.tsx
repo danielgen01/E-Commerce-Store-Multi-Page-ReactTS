@@ -33,7 +33,7 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartIte
               >CONTINUE SHOPPING</button>
               </div>
               </>}
-              
+
          </div>
 
         </div>
