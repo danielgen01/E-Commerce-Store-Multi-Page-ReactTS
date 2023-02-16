@@ -29,6 +29,25 @@
 
 
 
+/* in cart items style */
+
+.added-cart-item-row{
+  width: 80%;
+  height: auto;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#in-cart-product-img{
+  width: auto;
+  height: 10rem;
+  
+}
+
 
 /* CART OPEN ANIMATION */
 
