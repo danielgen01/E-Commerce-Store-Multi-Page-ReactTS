@@ -46,8 +46,8 @@ const CartAddBox:React.FC<CartAddBoxProps> = (
         max="9"
         />
         <div className='plus-minus-icons-ctn'>
-         <i className='bx bxs-minus-square' onClick={handleMinusClick}></i>
-         <i className='bx bxs-plus-square' onClick={handlePlusClick}></i> 
+         <i className='bx bx-minus' onClick={handleMinusClick} id="cart-add-box-minus-icon"></i>
+         <i className='bx bx-plus' onClick={handlePlusClick} id="cart-add-box-plus-icon"></i> 
          </div>
          <i className='bx bx-cart-add' />
     </div>
