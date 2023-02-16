@@ -50,30 +50,33 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    gap: 50%;
+    
 }
 
 .bxs-shopping-bag{
     font-size: 2.5rem;
     cursor: pointer;
+    margin-left: 50%;
     
 }
 
-.bxs-shopping-bag:hover{
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 1rem;
-    padding: 5%;
-}
 
 .bx-search{
     font-size: 2rem;
     cursor: pointer;
 }
 
-.bx-search:hover{
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 1rem;
-    padding: 5%;
-}
 
 
+/* CART COUNTER | ITEMS IN CART */
+
+#cart-count-number {
+    background-color: #ff5b5b;
+    border-radius: 50%;
+    font-size: .7rem;
+    text-align: center;
+    color: #ffffff;
+    width : 4.2rem;
+    margin-left: -12%;
+    margin-top: -20%;
+}  

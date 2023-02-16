@@ -36,7 +36,7 @@ const CartAddBox:React.FC<CartAddBoxProps> = (
     </div>
     <div className='product-infos-ctn '>
         <h2>{selectedItem.title}</h2>
-        <h3>{selectedItem.price}</h3>
+        <h3 style={{marginTop:"5%"}}>{selectedItem.price}</h3>
         <input type="number" 
         defaultValue={1}
         className="input-field-product-quantity"

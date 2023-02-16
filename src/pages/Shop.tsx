@@ -53,7 +53,7 @@ const Shop = () => {
       price: price
 
     })
-    console.log(selectedItem);
+    
   }
 
   const handleAddCartIconClickShop = (event: React.MouseEvent<HTMLElement>) => {

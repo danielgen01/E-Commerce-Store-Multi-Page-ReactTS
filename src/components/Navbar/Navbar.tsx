@@ -32,7 +32,9 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       <div className='nav-icons-ctn'>
       <i className='bx bx-search' title='search' onClick={toggleSearchbar}></i>
       <i className='bx bxs-shopping-bag' onClick={toggleCart}></i>
+      <h3 id='cart-count-number'>0</h3>
       </div>
+      
     </div>
   </>)
 }
