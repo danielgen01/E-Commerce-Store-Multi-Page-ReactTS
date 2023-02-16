@@ -10,7 +10,6 @@ type CartProps = {
 }
 
 
-
 const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems }) => {
 
 

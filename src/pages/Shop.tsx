@@ -56,10 +56,25 @@ const Shop = () => {
     
   }
 
+  // IF USER CLICKS ON A SHOP ITEM A BOX WILL OPEN 
+
   const handleAddCartIconClickShop = (event: React.MouseEvent<HTMLElement>) => {
     toggleCartAddContainer();
     showChildElements(event);
   }
+
+  // THIS IS THE FUNCTION FOR THE OPEN BOX TO ADD THE ITEM TO CART 
+  
+  const handleAddToCartClick = (event: React.MouseEvent<HTMLElement>) => {
+    const parent:any = event.currentTarget.parentNode;
+    const productTitle:string = parent.children[0].innerHTML;
+    const productPrice:number = parent.children[1].innerHTML;
+    const productQuantity:number = parent.children[2].value;
+    const productImage:string = parent.parentNode.children[0].innerHTML;
+    console.log(` TITLE: ${productTitle} PRICE: ${productPrice}
+     QUANTITY:${productQuantity} IMAGE SRC: ${productImage}`);
+  }
+
 
 
   return (
@@ -78,6 +93,7 @@ const Shop = () => {
    handleMinusClick ={handleMinusClick}
    handlePlusClick ={handlePlusClick}
    selectedItem={selectedItem}
+   handleAddToCartClick={handleAddToCartClick}
    
 
    

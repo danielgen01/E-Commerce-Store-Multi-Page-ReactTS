@@ -33,14 +33,11 @@ const App:React.FC = () => {
       
   };
 
- 
-
   const toggleSearchbar = () =>{
     setIsSearchBarOpen(!isSearchbarOpen);
   }
 
   
- 
  
 
   return (
@@ -58,6 +55,7 @@ const App:React.FC = () => {
   toggleCart={toggleCart}
   cartItems={cartItems}
   setCartItems={setCartItems}
+  
    />
    
  <Routes>

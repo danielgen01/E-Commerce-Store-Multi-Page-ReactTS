@@ -82,6 +82,11 @@
     transition: 500ms;
 }
 
+#cart-add-box-product-img{
+    width: auto;
+    height: 15rem;
+}
+
 
 
 
