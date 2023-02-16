@@ -27,6 +27,12 @@ const Shop = () => {
 
     setIsCartContainerOpen(!isCartAddContainerOpen);
     setQuantity(1);
+
+    if (!isCartAddContainerOpen) {
+      document.body.style.overflow = 'hidden'; // Scrollen auf der Seite deaktivieren
+    } else {
+      document.body.style.overflow = 'auto'; // Scrollen auf der Seite aktivieren
+    }
   }
 
 
