@@ -9,7 +9,9 @@ const Footer = () => {
 
       <p style={{textAlign:"center"}}>Created by Daniel Gendik</p>
     </div>
- </> )
+ </>
+ 
+ )
 }
 
 export default Footer
