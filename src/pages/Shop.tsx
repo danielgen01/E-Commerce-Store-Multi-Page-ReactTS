@@ -7,6 +7,7 @@ import { StringMappingType } from 'typescript';
 const Shop = () => {
   const [isCartAddContainerOpen,setIsCartContainerOpen] = useState<boolean>(false);
   const [quantity,setQuantity] = useState(1);
+  
  
   const handleMinusClick = () => {
     if (quantity > 1) {

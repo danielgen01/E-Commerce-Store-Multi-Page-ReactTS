@@ -19,7 +19,8 @@ const App:React.FC = () => {
   
   const [isCartOpen,setIsCartOpen] = useState<boolean>(false);
   const [isSearchbarOpen,setIsSearchBarOpen] = useState<boolean>(false);
-  const [isCartAddContainerOpen,setIsCartContainerOpen] = useState<boolean>(false);
+  const [isCartAddBoxOpen,setIsCartAddBoxOpen] = useState<boolean>(false);
+  const [cartItems,setCartItems] = useState([]);
   
   const toggleCart = () => {
       setIsCartOpen(!isCartOpen);
@@ -45,7 +46,9 @@ const App:React.FC = () => {
 
  <Cart
   isCartOpen={isCartOpen}
-   toggleCart={toggleCart}
+  toggleCart={toggleCart}
+  cartItems={cartItems}
+  setCartItems={setCartItems}
    />
    
  <Routes>

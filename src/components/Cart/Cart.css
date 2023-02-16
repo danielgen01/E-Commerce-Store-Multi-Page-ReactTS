@@ -50,3 +50,37 @@ to {margin-right: -3%;}
     transform: rotate(90deg) scale(1.5);
     transition: 500ms;
 }
+
+/* EMPTY CART CONTENT */
+
+.empty-cart-content{
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .empty-cart-content h2{
+    text-align: center;
+  }
+  
+  #empty-cart-icon{
+    font-size: 6rem;
+  }
+  
+  .continue-shopping-btn{
+    width: 15rem;
+    height: 3rem;
+    font-size: 0.8rem;
+    background-color: rgba(0,0,0,0.76);
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    cursor: pointer;
+    font-weight: 550;
+    letter-spacing: 0.05rem;
+  }
+  
+  .continue-shopping-btn{
+    background-color: rgba(0,0,0,1);
+  }
