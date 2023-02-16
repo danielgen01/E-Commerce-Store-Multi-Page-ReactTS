@@ -32,10 +32,10 @@ const CartAddBox:React.FC<CartAddBoxProps> = (
     <i className='bx bx-x'  onClick={toggleCartAddContainer} id="close-add-cart-box-icon"/>
     <div className='cart-add-box-content'>
      <div className='img-ctn col-6 col-s-6'>
-    <img src={selectedItem.image} style={{width:"70%",height:"auto"}}/>
+    <img src={selectedItem.image} style={{width:"auto",height:"15rem"}}/>
     </div>
     <div className='product-infos-ctn '>
-        <h1>{selectedItem.title}</h1>
+        <h2>{selectedItem.title}</h2>
         <h3>{selectedItem.price}</h3>
         <input type="number" 
         defaultValue={1}

@@ -9,7 +9,7 @@
 }
 .cart-add-box{
     position: absolute;
-    margin-top: 20%;
+    top: 30%;
     left:30% ;
     background-color: #ffffff;
     width: 50rem;
@@ -23,6 +23,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img-ctn{
+    margin-top: 5%;
 }
 
 .product-infos-ctn{
