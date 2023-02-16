@@ -60,7 +60,7 @@ const App:React.FC = () => {
    
  <Routes>
  <Route path='/' element={<Home />} />
- <Route path='/shop' element={<Shop/>} />
+ <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems}/>} />
  <Route path='/about' element={<About />} />
  <Route path='/contact' element={<Contact />} />
  <Route path="*" element={<NotFound />} />

@@ -1,14 +1,23 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import Main from '../components/Main/Main'
 import CartAddBox from '../components/CartAddBox/CartAddBox';
 import { StringMappingType } from 'typescript';
 import Footer from '../components/Footer/Footer';
 
+type ShopProps = {
+  cartItems:any;
+  setCartItems:any
+}
 
-const Shop = () => {
+
+const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems }) => {
   const [isCartAddContainerOpen,setIsCartContainerOpen] = useState<boolean>(false);
   const [quantity,setQuantity] = useState(1);
   const [selectedItem,setSelectedItem] = useState({});
+  
+  useEffect(() => {
+    console.log(cartItems);
+  }, [cartItems]);
   
 //  CHANGE QUANTITY IN CART ADD BOX CONTAINER
   const handleMinusClick = () => {
@@ -70,10 +79,20 @@ const Shop = () => {
     const productTitle:string = parent.children[0].innerHTML;
     const productPrice:number = parent.children[1].innerHTML;
     const productQuantity:number = parent.children[2].value;
-    const productImage:string = parent.parentNode.children[0].innerHTML;
-    console.log(` TITLE: ${productTitle} PRICE: ${productPrice}
-     QUANTITY:${productQuantity} IMAGE SRC: ${productImage}`);
+    const productImage:string = parent.parentNode.querySelector("img").src;
+    // console.log(` TITLE: ${productTitle} PRICE: ${productPrice}
+    //  QUANTITY:${productQuantity} IMAGE SRC: ${productImage}`);
+
+     setCartItems((prevCartItems: any) => [...prevCartItems, {
+        title: productTitle,
+        price: productPrice,
+        quantity: productQuantity,
+        image: productImage
+     }])
+
   }
+
+  
 
 
 
