@@ -108,7 +108,7 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems, cartCount,setCartCo
   }
 
   toggleCartAddContainer();
-  setCartCount((prevCount: number) => prevCount +=1);
+  setCartCount((prevCount: number) => prevCount +=1 * productQuantity);
   
 }
 
