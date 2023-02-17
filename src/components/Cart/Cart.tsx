@@ -34,10 +34,8 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartIte
  }
 
  const handlePlusButtonClick = (item: CartItem) =>{
-  if(item.quantity < 10){
     item.quantity = Number(item.quantity) + 1;
    setCartItems((prevCartItems: CartItem[] ) => [...prevCartItems]);
-  }
    setCartCount((prevCount: number) => prevCount +=1);
 }
 
