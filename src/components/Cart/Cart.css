@@ -133,3 +133,7 @@ to {margin-right: -3%;}
   #cart-plus-icon:hover{
     color: #0297b7;
   }
+
+  #cart-trash-icon:hover{
+    color: #ff5b5b;
+  }

@@ -17,23 +17,32 @@ type CartProps = {
   toggleCart: () => void;
   cartItems:CartItem[] ;
   setCartItems:any;
-  
+   
 }
 
 
 const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems }) => {
 
-  const handleMinusButtonClick:any = (item: { quantity: number; }) =>{
+  const handleMinusButtonClick = (item: CartItem) =>{
     item.quantity -=1;
     setCartItems((prevCartItems:CartItem[]) => [...prevCartItems]);
     // setCartCount(prevCount => prevCount -=1);
  }
 
- const handlePlusButtonClick:any = (item: { quantity: number; }) =>{
+ const handlePlusButtonClick = (item: CartItem) =>{
+  if(item.quantity < 10){
    item.quantity +=1;
    setCartItems((prevCartItems: CartItem[] ) => [...prevCartItems]);
+  }
   //  setCartCount(prevCount => prevCount +=1);
 }
+
+const handleRemoveFromCart = (index:number) =>{
+  const updatedCart = cartItems.filter((item,i) => i!== index);
+  setCartItems(updatedCart);
+  // setCartCount(prevCount => prevCount -=1);
+
+  }
 
 
   return (
@@ -59,7 +68,7 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartIte
               {cartItems.length > 0 &&
               <>
 
-                {cartItems.map((item:any)=> (
+                {cartItems.map((item:any,index)=> (
                   <div key={item} className="added-cart-item-row">
                     <div className='item-title-and-img'
                      style={{display:"flex",flexDirection:"column"}}>
@@ -75,8 +84,21 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartIte
                     id="cart-quantity-number-input-field"
                     />
                     <div className='quantity-change-buttons'>
-                     <i className='bx bx-minus'  id="cart-minus-icon" onClick={handleMinusButtonClick}></i>
-                    <i className='bx bx-plus'  id="cart-plus-icon" onClick={handlePlusButtonClick}></i> 
+
+                      {item.quantity >1 && 
+                      <>
+                     <i className='bx bx-minus'  id="cart-minus-icon"   onClick={() => handleMinusButtonClick(item)}></i>
+                    </>
+                    }
+                    {item.quantity <=1  &&
+
+                                 
+                    <i className='bx bx-trash-alt' id='cart-trash-icon'
+                      onClick={() => handleRemoveFromCart(index)}
+                      >
+                          </i>
+                      }
+                    <i className='bx bx-plus'  id="cart-plus-icon"  onClick={() => handlePlusButtonClick(item)}></i> 
                     </div>
                     </div>
                     <div className='prices' style={{display:"flex",flexDirection:"column"}}>

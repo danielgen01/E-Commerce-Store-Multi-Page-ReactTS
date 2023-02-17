@@ -22,9 +22,7 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems }) => {
   const [quantity,setQuantity] = useState(1);
   const [selectedItem,setSelectedItem] = useState({});
   
-  useEffect(() => {
-    console.log(cartItems);
-  }, [cartItems]);
+  
   
 //  CHANGE QUANTITY IN CART ADD BOX CONTAINER
   const handleMinusClick = () => {
