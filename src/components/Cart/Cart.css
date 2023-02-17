@@ -104,3 +104,32 @@ to {margin-right: -3%;}
   .continue-shopping-btn{
     background-color: rgba(0,0,0,1);
   }
+
+  /* Quantity style*/
+
+  #cart-quantity-number-input-field{
+    width: 3rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: default;
+
+  }
+
+  .quantity-change-buttons{
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    gap: 20%;
+    
+    
+  }
+  #cart-minus-icon:hover{
+    color: #ff5b5b;
+  }
+
+  #cart-plus-icon:hover{
+    color: #0297b7;
+  }

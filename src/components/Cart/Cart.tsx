@@ -16,11 +16,24 @@ type CartProps = {
   isCartOpen: boolean;
   toggleCart: () => void;
   cartItems:CartItem[] ;
+  setCartItems:any;
   
 }
 
 
-const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems }) => {
+const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems }) => {
+
+  const handleMinusButtonClick:any = (item: { quantity: number; }) =>{
+    item.quantity -=1;
+    setCartItems((prevCartItems:CartItem[]) => [...prevCartItems]);
+    // setCartCount(prevCount => prevCount -=1);
+ }
+
+ const handlePlusButtonClick:any = (item: { quantity: number; }) =>{
+   item.quantity +=1;
+   setCartItems((prevCartItems: CartItem[] ) => [...prevCartItems]);
+  //  setCartCount(prevCount => prevCount +=1);
+}
 
 
   return (
@@ -45,7 +58,7 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems }) => {
 
               {cartItems.length > 0 &&
               <>
-              
+
                 {cartItems.map((item:any)=> (
                   <div key={item} className="added-cart-item-row">
                     <div className='item-title-and-img'
@@ -53,13 +66,23 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems }) => {
                     <img src={item.image} id="in-cart-product-img"/>
                     <h4>{item.title}</h4>
                     </div>
+                    <div className='quantity-box' style={{display:"flex",flexDirection:"column"}}>
                     <input type="number"
-                    defaultValue={item.quantity}
+                    value={item.quantity}
                     min="1"
                     max="10"
-                    style={{width:"3rem",textAlign:"center"}}
+                    readOnly={true}
+                    id="cart-quantity-number-input-field"
                     />
-                    <h4>{item.price}</h4>
+                    <div className='quantity-change-buttons'>
+                     <i className='bx bx-minus'  id="cart-minus-icon" onClick={handleMinusButtonClick}></i>
+                    <i className='bx bx-plus'  id="cart-plus-icon" onClick={handlePlusButtonClick}></i> 
+                    </div>
+                    </div>
+                    <div className='prices' style={{display:"flex",flexDirection:"column"}}>
+                    <h5>{item.price}</h5>
+                    <h4>{item.price * item.quantity}</h4>
+                    </div>
                     </div>
                 ))}
                 

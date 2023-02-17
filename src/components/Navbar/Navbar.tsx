@@ -22,7 +22,6 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
     <div className='Navbar'>
       <NavLink to="/" className="nav-links" id='Homepage-Link'>Home</NavLink>
       <NavLink to="/shop" className="nav-links" id='Shop-Link'>Shop</NavLink>
-      <NavLink to="/about" className="nav-links" id='About-Link'>About</NavLink>
       <NavLink to="/contact" className="nav-links" id='Contact-Link'>Contact</NavLink>
       <div className='top-page-search-ctn' style={{display:isSearchbarOpen? "flex" : "none"}}>
       <input type="text"
