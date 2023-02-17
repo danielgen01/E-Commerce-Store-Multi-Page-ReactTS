@@ -55,6 +55,7 @@ const handleRemoveFromCart = (index:number) =>{
         <div className='cart-box'>
          <div className='cart-content'>
             <h2 style={{textAlign:"center"}}>Cart</h2>
+            <h2 style={{textAlign:"center"}}>{cartCount} items in cart | </h2>
             <i className='bx bx-x' id='close-cart-icon' onClick={toggleCart}></i>
             
             {/* Rendering empty cart content */}
@@ -113,7 +114,7 @@ const handleRemoveFromCart = (index:number) =>{
                     </div>
                 ))}  {/* END OF .map() */}
                 
-              
+                      
               </> }
 
          </div>
