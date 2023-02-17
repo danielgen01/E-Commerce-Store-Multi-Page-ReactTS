@@ -30,7 +30,9 @@ const App:React.FC = () => {
   const [isSearchbarOpen,setIsSearchBarOpen] = useState<boolean>(false);
   const [isCartAddBoxOpen,setIsCartAddBoxOpen] = useState<boolean>(false);
   const [cartItems,setCartItems] = useState<CartItem[]>([]);
-  
+  const [cartCount,setCartCount] = useState(0);
+
+   
   const toggleCart = () => {
       setIsCartOpen(!isCartOpen);
 
@@ -58,6 +60,7 @@ const App:React.FC = () => {
   isSearchbarOpen={isSearchbarOpen}
    toggleSearchbar={toggleSearchbar}
    cartItems={cartItems}
+   cartCount={cartCount}
    />
 
  <Cart
@@ -65,13 +68,15 @@ const App:React.FC = () => {
   toggleCart={toggleCart}
   cartItems={cartItems}
   setCartItems={setCartItems}
+  cartCount={cartCount}
+  setCartCount={setCartCount}
 
   
    />
    
  <Routes>
  <Route path='/' element={<Home />} />
- <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems} />} />
+ <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount} />} />
  <Route path='/contact' element={<Contact />} />
  <Route path="*" element={<NotFound />} />
  </Routes>

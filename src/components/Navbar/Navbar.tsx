@@ -7,13 +7,14 @@ type NavbarProps = {
   toggleCart: () => void;
   toggleSearchbar: () => void;
   isSearchbarOpen:any;
-  cartItems:any
+  cartCount:number;
+  cartItems:any;
 }
 
 
 
 
-const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbarOpen, cartItems }) => {
+const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbarOpen, cartCount,cartItems }) => {
 
   
   
@@ -32,7 +33,7 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       <div className='nav-icons-ctn'>
       <i className='bx bx-search' title='search' onClick={toggleSearchbar}></i>
       <i className='bx bxs-shopping-bag' onClick={toggleCart}></i>
-      <h3 id='cart-count-number'>{cartItems.length}</h3>
+      <h3 id='cart-count-number'>{cartCount}</h3>
       </div>
       
     </div>

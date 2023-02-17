@@ -14,13 +14,16 @@ type CartItem = {
 type ShopProps = {
   setCartItems:any;
   cartItems:CartItem[];
+  cartCount:number;
+  setCartCount:any
 }
 
 
-const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems }) => {
+const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems, cartCount,setCartCount }) => {
   const [isCartAddContainerOpen,setIsCartContainerOpen] = useState<boolean>(false);
   const [quantity,setQuantity] = useState(1);
   const [selectedItem,setSelectedItem] = useState({});
+  
   
   
   
@@ -105,6 +108,8 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems }) => {
   }
 
   toggleCartAddContainer();
+  setCartCount((prevCount: number) => prevCount +=1);
+  
 }
 
   

@@ -17,16 +17,18 @@ type CartProps = {
   toggleCart: () => void;
   cartItems:CartItem[] ;
   setCartItems:any;
+  cartCount:number;
+  setCartCount:any
    
 }
 
 
-const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems }) => {
+const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems,cartCount,setCartCount }) => {
 
   const handleMinusButtonClick = (item: CartItem) =>{
     item.quantity -=1;
     setCartItems((prevCartItems:CartItem[]) => [...prevCartItems]);
-    // setCartCount(prevCount => prevCount -=1);
+    setCartCount((prevCount: number) => prevCount -=1);
  }
 
  const handlePlusButtonClick = (item: CartItem) =>{
@@ -34,13 +36,13 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartIte
     item.quantity = Number(item.quantity) + 1;
    setCartItems((prevCartItems: CartItem[] ) => [...prevCartItems]);
   }
-  //  setCartCount(prevCount => prevCount +=1);
+   setCartCount((prevCount: number) => prevCount +=1);
 }
 
 const handleRemoveFromCart = (index:number) =>{
   const updatedCart = cartItems.filter((item,i) => i!== index);
   setCartItems(updatedCart);
-  // setCartCount(prevCount => prevCount -=1);
+  setCartCount((prevCount: number) => prevCount -=1);
 
   }
 
