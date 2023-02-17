@@ -14,13 +14,22 @@ import NotFound from './pages/NotFound';
 import Cart from './components/Cart/Cart';
 
 
+type CartItem = {
+  title: string;
+  price: number;
+  quantity: number;
+  image: string;
+}
+
+
 const App:React.FC = () => {
+
 
   
   const [isCartOpen,setIsCartOpen] = useState<boolean>(false);
   const [isSearchbarOpen,setIsSearchBarOpen] = useState<boolean>(false);
   const [isCartAddBoxOpen,setIsCartAddBoxOpen] = useState<boolean>(false);
-  const [cartItems,setCartItems] = useState([]);
+  const [cartItems,setCartItems] = useState<CartItem[]>([]);
   
   const toggleCart = () => {
       setIsCartOpen(!isCartOpen);
@@ -48,19 +57,20 @@ const App:React.FC = () => {
   toggleCart={toggleCart}
   isSearchbarOpen={isSearchbarOpen}
    toggleSearchbar={toggleSearchbar}
+   cartItems={cartItems}
    />
 
  <Cart
   isCartOpen={isCartOpen}
   toggleCart={toggleCart}
   cartItems={cartItems}
-  setCartItems={setCartItems}
+
   
    />
    
  <Routes>
  <Route path='/' element={<Home />} />
- <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems}/>} />
+ <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems} />} />
  <Route path='/about' element={<About />} />
  <Route path='/contact' element={<Contact />} />
  <Route path="*" element={<NotFound />} />

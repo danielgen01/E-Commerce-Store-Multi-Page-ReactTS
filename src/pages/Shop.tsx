@@ -4,9 +4,16 @@ import CartAddBox from '../components/CartAddBox/CartAddBox';
 import { StringMappingType } from 'typescript';
 import Footer from '../components/Footer/Footer';
 
+type CartItem = {
+  title: string;
+  price: number;
+  quantity: number;
+  image: string;
+}
+
 type ShopProps = {
-  cartItems:any;
-  setCartItems:any
+  setCartItems:any;
+  cartItems:CartItem[];
 }
 
 
@@ -80,9 +87,16 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems }) => {
     const productPrice:number = parent.children[1].innerHTML;
     const productQuantity:number = parent.children[2].value;
     const productImage:string = parent.parentNode.querySelector("img").src;
-    // console.log(` TITLE: ${productTitle} PRICE: ${productPrice}
-    //  QUANTITY:${productQuantity} IMAGE SRC: ${productImage}`);
+   
+    // make a variable for existing cart items
+    const existingItem:CartItem | undefined = cartItems.find((item: { title: string; quantity: number}) => item.title === productTitle)
 
+    // checks if product already in cart
+
+    if (existingItem){
+      alert(`${existingItem.title} already in Cart`)
+
+    }else{
      setCartItems((prevCartItems: any) => [...prevCartItems, {
         title: productTitle,
         price: productPrice,
@@ -91,6 +105,9 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems }) => {
      }])
 
   }
+
+  toggleCartAddContainer();
+}
 
   
 

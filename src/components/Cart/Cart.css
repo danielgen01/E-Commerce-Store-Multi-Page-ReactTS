@@ -9,7 +9,7 @@
     height: 150vh;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
-    overflow: hidden;
+    
     
   
 }
@@ -21,9 +21,10 @@
     float: right;
     border-radius: 5rem;
     margin-right: -30%;
-    overflow: hidden;
+    overflow: scroll;
     animation: slides 0.5s normal;
     animation-fill-mode: forwards;
+
     
 }
 

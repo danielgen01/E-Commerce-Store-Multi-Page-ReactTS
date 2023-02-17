@@ -2,15 +2,25 @@ import { type } from 'os'
 import React, { useState } from 'react'
 import "./Cart.css"
 
-type CartProps = {
-  isCartOpen: boolean;
-  toggleCart: () => void;
-  cartItems: any;
-  setCartItems:any;
+
+type CartItem = {
+  title: string;
+  price: number;
+  quantity: number;
+  image: string;
 }
 
 
-const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems }) => {
+
+type CartProps = {
+  isCartOpen: boolean;
+  toggleCart: () => void;
+  cartItems:CartItem[] ;
+  
+}
+
+
+const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems }) => {
 
 
   return (
@@ -43,7 +53,12 @@ const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartIte
                     <img src={item.image} id="in-cart-product-img"/>
                     <h4>{item.title}</h4>
                     </div>
-                    <h4>{item.quantity}</h4>
+                    <input type="number"
+                    defaultValue={item.quantity}
+                    min="1"
+                    max="10"
+                    style={{width:"3rem",textAlign:"center"}}
+                    />
                     <h4>{item.price}</h4>
                     </div>
                 ))}
