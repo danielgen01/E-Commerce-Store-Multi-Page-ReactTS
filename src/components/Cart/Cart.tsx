@@ -1,5 +1,5 @@
 import { type } from 'os'
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import "./Cart.css"
 
 
@@ -27,6 +27,8 @@ type CartProps = {
 
 const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems,cartCount,setCartCount }) => {
 
+  const [total,setTotal] = useState<any>();
+
   const handleMinusButtonClick = (item: CartItem) =>{
     item.quantity -=1;
     setCartItems((prevCartItems:CartItem[]) => [...prevCartItems]);
@@ -46,6 +48,19 @@ const handleRemoveFromCart = (index:number) =>{
 
   }
 
+  useEffect(() => {
+    const calculateTotalCost = (cartItems:any) => {
+      let total = 0;
+      cartItems.forEach((item: { price: number; quantity: number; })=> {
+        total += item.price * item.quantity
+      });
+      return total.toFixed(2);
+    }
+    
+     
+    setTotal(calculateTotalCost(cartItems))
+  },[cartItems])
+
 
   return (
     <div className='Cart' style={{display: isCartOpen? "block" : "none"}}>
@@ -53,7 +68,7 @@ const handleRemoveFromCart = (index:number) =>{
         <div className='cart-box'>
          <div className='cart-content'>
             <h2 style={{textAlign:"center"}}>Cart</h2>
-            <h2 style={{textAlign:"center"}}>{cartCount} items in cart | </h2>
+            <h3 style={{textAlign:"center"}}>{cartCount} items in cart | Total: {total}</h3>
             <i className='bx bx-x' id='close-cart-icon' onClick={toggleCart}></i>
             
             {/* Rendering empty cart content */}
