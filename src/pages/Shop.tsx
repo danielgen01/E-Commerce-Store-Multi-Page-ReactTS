@@ -73,6 +73,8 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems, cartCount,setCartCo
     
   }
 
+  
+
   // IF USER CLICKS ON A SHOP ITEM A BOX WILL OPEN 
 
   const handleAddCartIconClickShop = (event: React.MouseEvent<HTMLElement>) => {
@@ -85,7 +87,8 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems, cartCount,setCartCo
   const handleAddToCartClick = (event: React.MouseEvent<HTMLElement>) => {
     const parent:any = event.currentTarget.parentNode;
     const productTitle:string = parent.children[0].innerHTML;
-    const productPrice:number = parent.children[1].innerHTML;
+    let oldProductPrice = parent.children[1].innerHTML;
+    const productPrice:number = oldProductPrice.replace("€","");
     const productQuantity:number = parent.children[2].value;
     const productImage:string = parent.parentNode.querySelector("img").src;
    

@@ -23,6 +23,8 @@ type CartProps = {
 }
 
 
+
+
 const Cart:React.FC<CartProps> = ({ isCartOpen, toggleCart, cartItems,setCartItems,cartCount,setCartCount }) => {
 
   const handleMinusButtonClick = (item: CartItem) =>{
@@ -104,11 +106,12 @@ const handleRemoveFromCart = (index:number) =>{
                     </div>
                     </div>
                     <div className='prices' style={{display:"flex",flexDirection:"column"}}>
-                    <h5>{item.price}</h5>
-                    <h4>{item.price * item.quantity}</h4>
+                    <h5>{item.price}€</h5> 
+                    <hr/>
+                    <h4>{item.price * item.quantity}€</h4>
                     </div>
                     </div>
-                ))}
+                ))}  {/* END OF .map() */}
                 
               
               </> }

@@ -1,5 +1,5 @@
 .Cart{
-    overflow: hidden;
+  overflow: auto;
     
 }
 
@@ -9,7 +9,7 @@
     height: 150vh;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
-    
+    z-index:1;
     
   
 }
@@ -21,11 +21,9 @@
     float: right;
     border-radius: 5rem;
     margin-right: -30%;
-    overflow: scroll;
     animation: slides 0.5s normal;
     animation-fill-mode: forwards;
-
-    
+    z-index:2;
 }
 
 
