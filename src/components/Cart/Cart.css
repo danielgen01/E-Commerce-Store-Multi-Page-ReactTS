@@ -1,5 +1,5 @@
 .Cart{
-  overflow: auto;
+  overflow: none;
   
 }
 
@@ -7,15 +7,17 @@
     position: absolute;
     top:0;
     left:0;
-    height: 150vh;
+    min-height: 150vh;
+    height: auto;
     width: 100%;
     background-color: rgba(0,0,0,0.5);  
-  
+    overflow: none;
 }
 
 .cart-box{
     width: 45vh;
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     background-color: white;
     float: right;
     border-radius: 1rem;
@@ -25,6 +27,10 @@
     z-index: 50000000000;
     cursor: default;
     overflow: none;
+}
+
+.cart-content{
+  overflow: none;
 }
 
 
@@ -37,7 +43,7 @@
   margin-top: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 20%;
   align-items: center;
   
 }
@@ -54,7 +60,7 @@
 
 @keyframes slides {
 from {margin-right: calc(0% - px)}
-to {margin-right: -1%;}
+to {margin-right: 0%;}
 }
 
 /*Close cart icon */

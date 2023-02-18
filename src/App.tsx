@@ -36,11 +36,7 @@ const App:React.FC = () => {
   const toggleCart = () => {
       setIsCartOpen(!isCartOpen);
 
-      if (!isCartOpen) {
-        document.body.style.overflow = 'hidden'; // Scrollen auf der Seite deaktivieren
-      } else {
-        document.body.style.overflow = 'auto'; // Scrollen auf der Seite aktivieren
-      }
+   
       
   };
 

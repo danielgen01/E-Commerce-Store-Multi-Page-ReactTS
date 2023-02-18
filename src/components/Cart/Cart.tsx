@@ -89,7 +89,7 @@ const handleRemoveFromCart = (index:number) =>{
                 {cartItems.map((item:any,index)=> (
                   <div key={item} className="added-cart-item-row">
                     <div className='item-title-and-img'
-                     style={{display:"flex",flexDirection:"column"}}>
+                     style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
                     <img src={item.image} id="in-cart-product-img"/>
                     <h4>{item.title}</h4>
                     </div>

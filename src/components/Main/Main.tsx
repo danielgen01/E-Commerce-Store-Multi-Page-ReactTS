@@ -19,7 +19,7 @@ const Main:React.FC<MainProps> = ({toggleCartAddContainer,
         {/* PRODUCT 1 */}
         <div className='item-ctn col-s-6 col-4'>
           <h2>iPhone 12</h2>
-          <img src='https://files.refurbed.com/ii/iphone-12-1607327724.jpg?t=resize&h=600&w=800'
+          <img src='https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/418114_43cbdc46-0a58-409c-ade3-3f1821977ecd.jpg?t=resize&h=600&w=800'
           className='product-img' />
           <h2>699€</h2>
           <i className='bx bx-cart-add' onClick={handleAddCartIconClickShop}></i>
@@ -28,7 +28,7 @@ const Main:React.FC<MainProps> = ({toggleCartAddContainer,
          {/* PRODUCT 2 */}
          <div className='item-ctn col-s-6 col-4'>
           <h2>iPhone SE (2020)</h2>
-          <img src='https://files.refurbed.com/ii/iphone-se-2020-1587013419.jpg?t=resize&h=600&w=800'
+          <img src='https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/347039_e2fa194c-d79d-4cb6-86f4-4a9ad29dd2a9.jpg?t=resize&h=600&w=800'
           className='product-img' />
           <h2>399€</h2>
           <i className='bx bx-cart-add' onClick={handleAddCartIconClickShop} ></i>
