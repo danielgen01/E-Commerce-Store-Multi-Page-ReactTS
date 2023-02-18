@@ -10,7 +10,7 @@
 .cart-add-box{
     position: absolute;
     top: 30%;
-    left:30% ;
+    left: 30%;
     background-color: #ffffff;
     width: 50rem;
     height: 20rem;
@@ -98,7 +98,11 @@
      width: 100%;
    }
 
-
+   .cart-add-box{
+    top: 15%;
+    left: 2%;
+    width: 30rem;
+   }
  }
 
 
@@ -118,7 +122,11 @@
  .col-s-11 {width: 91.66%;}
  .col-s-12 {width: 100%;}
 
-
+ .cart-add-box{
+    top: 25%;
+    left: 5%;
+    width: 40rem;
+   }
 }
 
 

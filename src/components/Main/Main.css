@@ -59,6 +59,11 @@
     font-size: 11px;
    }
 
+   .item-ctn:hover .product-img{
+    transform: none;
+    transition: none;
+   }
+
  }
 
 
@@ -81,6 +86,8 @@
  body{
     font-size: 12px;
    }
+
+  
 
 }
 
