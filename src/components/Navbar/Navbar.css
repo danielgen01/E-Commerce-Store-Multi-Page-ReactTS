@@ -1,7 +1,7 @@
 .Navbar{
     display: flex;
     align-items: center;
-    margin-top: 2%;
+    margin-top: .5%;
 }
 
 .desktop-nav-links{
@@ -103,7 +103,10 @@
      #menu-icon{
         font-size: 3rem;
         cursor: pointer;
+        position: fixed;
+        margin-top: -4%;
      }
+
   
 
    }
@@ -132,6 +135,8 @@
  #menu-icon{
     font-size: 3rem;
     cursor: pointer;
+    position: fixed;
+    margin-top: -4%;
  }
    
   }
