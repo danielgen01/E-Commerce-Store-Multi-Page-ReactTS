@@ -5,6 +5,7 @@
 }
 
 .desktop-nav-links{
+    display: flex;
     gap: 5%;
     margin-left: 2%;
     width: 90%;
