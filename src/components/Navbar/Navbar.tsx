@@ -21,9 +21,14 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
     return (
     <>
     <div className='Navbar'>
+      <div className='desktop-nav-links'>
       <NavLink to="/" className="nav-links" id='Homepage-Link'>Home</NavLink>
       <NavLink to="/shop" className="nav-links" id='Shop-Link'>Shop</NavLink>
       <NavLink to="/contact" className="nav-links" id='Contact-Link'>Contact</NavLink>
+      </div>
+      <div className='touch-devices-nav-links'>
+      <i className='bx bx-menu' id='menu-icon'></i>
+      </div>
       <div className='top-page-search-ctn' style={{display:isSearchbarOpen? "flex" : "none"}}>
       <input type="text"
       className='search-input-field'
