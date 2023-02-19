@@ -6,15 +6,19 @@ import { type } from '@testing-library/user-event/dist/type';
 type NavbarProps = {
   toggleCart: () => void;
   toggleSearchbar: () => void;
-  isSearchbarOpen:any;
+  isSearchbarOpen:boolean;
   cartCount:number;
   cartItems:any;
+  isTouchNavbarOpen:boolean;
+  setIsTouchNavbarOpen:any;
+  toggleTouchNavbar: () => void;
+
 }
 
 
 
 
-const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbarOpen, cartCount,cartItems }) => {
+const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbarOpen, cartCount,cartItems,isTouchNavbarOpen,setIsTouchNavbarOpen,toggleTouchNavbar}) => {
 
   
   
@@ -27,7 +31,16 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       <NavLink to="/contact" className="nav-links" id='Contact-Link'>Contact</NavLink>
       </div>
       <div className='touch-devices-nav-links'>
-      <i className='bx bx-menu' id='menu-icon'></i>
+        {!isTouchNavbarOpen && 
+        <>
+        <i className='bx bx-menu' id='menu-icon' onClick={toggleTouchNavbar}></i>
+        </>
+        }
+      {isTouchNavbarOpen &&
+      <>
+      <i className='bx bx-x' id='close-menu-icon' onClick={toggleTouchNavbar}></i>
+      </>}
+      
       </div>
       <div className='top-page-search-ctn' style={{display:isSearchbarOpen? "flex" : "none"}}>
       <input type="text"

@@ -31,17 +31,21 @@ const App:React.FC = () => {
   const [isCartAddBoxOpen,setIsCartAddBoxOpen] = useState<boolean>(false);
   const [cartItems,setCartItems] = useState<CartItem[]>([]);
   const [cartCount,setCartCount] = useState(0);
+  const [isTouchNavbarOpen, setIsTouchNavbarOpen] = useState<boolean>(false);
 
    
   const toggleCart = () => {
       setIsCartOpen(!isCartOpen);
 
-   
       
   };
 
   const toggleSearchbar = () =>{
     setIsSearchBarOpen(!isSearchbarOpen);
+  }
+
+  const toggleTouchNavbar = () =>{
+    setIsTouchNavbarOpen(!isTouchNavbarOpen);
   }
 
   
@@ -57,6 +61,9 @@ const App:React.FC = () => {
    toggleSearchbar={toggleSearchbar}
    cartItems={cartItems}
    cartCount={cartCount}
+   isTouchNavbarOpen={isTouchNavbarOpen}
+   setIsTouchNavbarOpen={setIsTouchNavbarOpen}
+   toggleTouchNavbar={toggleTouchNavbar}
    />
 
  <Cart

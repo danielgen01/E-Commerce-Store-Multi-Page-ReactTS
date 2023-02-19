@@ -107,6 +107,11 @@
         margin-top: -4%;
      }
 
+     #close-menu-icon{
+         font-size: 3rem;
+        cursor: pointer;
+     }
+
   
 
    }
@@ -138,6 +143,12 @@
     position: fixed;
     margin-top: -4%;
  }
+
+ #close-menu-icon{
+         font-size: 3rem;
+        cursor: pointer;
+     }
+
    
   }
   
@@ -161,6 +172,10 @@
    .col-12 {width: 100%;}
   
    #menu-icon{
+    display: none;
+   }
+
+   #close-menu-icon{
     display: none;
    }
   
