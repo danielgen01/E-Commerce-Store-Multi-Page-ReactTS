@@ -1,4 +1,10 @@
+
+@font-face {
+  font-family: "Montserat";
+  src: url(assets/Montserrat-VariableFont_wght.ttf);
+}
+
 *{
-  margin: 0;
- 
+ margin: 0;
+ font-family: Montserat;
 }
