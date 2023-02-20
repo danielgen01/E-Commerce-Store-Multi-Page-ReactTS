@@ -1,10 +1,8 @@
-.Home{
+.Contact{
     height: 100vh;
-    background: url("https://www.apple.com/v/home/ay/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_small_2x.jpg");
-    background-position-x: center;  
-    background-position-y: 250%;
-    background-color: black;
-    
+    background-image: url("https://support.apple.com/content/dam/edam/applecare/images/en_US/psp_heros/hero-banner-homepage.image.large_2x.jpg");
+    color: #ffffff;
+    background-repeat: no-repeat;
 }
 
 
@@ -18,12 +16,11 @@
        width: 100%;
      }
 
-     .Home{
+     .Contact{
         background-repeat: no-repeat;
         background-position-x: center;
-        background-position-y: -50%;
-        background-size: 205%;
-        background-color: black;
+        background-size: 200%;
+       
         
         
      }
@@ -48,6 +45,14 @@
    .col-s-12 {width: 100%;}
   
  
+   .Contact{
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 200%;
+   
+    
+    
+ }
 
   }
   

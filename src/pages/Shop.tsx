@@ -123,8 +123,7 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems, cartCount,setCartCo
 
   return (
     <>
-    <h1 style={{textAlign:"center"}}>Shop items</h1>
-
+    
     <Main 
   isCartAddContainerOpen={isCartAddContainerOpen}
   toggleCartAddContainer={toggleCartAddContainer}
