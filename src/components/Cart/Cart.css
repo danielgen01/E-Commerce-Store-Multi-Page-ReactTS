@@ -172,7 +172,11 @@ to {margin-right: 0%;}
     to {margin-top: 0%;}
   }
 
+  #cart-quantity-number-input-field{
+    padding-left: 10%;
+
   }
+}
 
 
 
