@@ -131,6 +131,7 @@ const handleRemoveFromCart = (index:number) =>{
               </> }
 
          </div>
+         
          </div>
         
      </div>
