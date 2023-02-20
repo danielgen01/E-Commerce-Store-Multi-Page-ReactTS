@@ -3,21 +3,24 @@
 .cart-add-ctn{
     position: absolute;
     top: 0;
-    height: 150vh;
+    height: 1000vh;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
 }
 .cart-add-box{
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
     background-color: #ffffff;
     width: 50rem;
     height: 20rem;
     border-radius: 1rem;
     overflow: none;
-    
+    transform: translate(-50%, -50%);
+
 }
+
+
 
 .cart-add-box-content{
     display: flex;
@@ -100,8 +103,7 @@
    }
 
    .cart-add-box{
-    top: 15%;
-    left: 2%;
+    
     width: 30rem;
    }
  }
@@ -124,8 +126,7 @@
  .col-s-12 {width: 100%;}
 
  .cart-add-box{
-    top: 25%;
-    left: 5%;
+    
     width: 40rem;
    }
 }

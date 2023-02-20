@@ -110,7 +110,6 @@
      #menu-icon{
         font-size: 3rem;
         cursor: pointer;
-        position: fixed;
         margin-top: -4%;
      }
 
@@ -169,7 +168,6 @@
  #menu-icon{
     font-size: 3rem;
     cursor: pointer;
-    position: fixed;
     margin-top: -3%;
  }
 
