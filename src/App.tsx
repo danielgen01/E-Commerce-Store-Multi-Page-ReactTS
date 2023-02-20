@@ -54,38 +54,45 @@ const App:React.FC = () => {
     }
   }
 
-  
+  const globalProps = {
+    toggleCart: toggleCart,
+    isSearchbarOpen:isSearchbarOpen,
+    toggleSearchbar:toggleSearchbar,
+    cartItems:cartItems,
+    cartCount:cartCount,
+    isTouchNavbarOpen:isTouchNavbarOpen,
+    setIsTouchNavbarOpen:setIsTouchNavbarOpen,
+    toggleTouchNavbar:toggleTouchNavbar
+  }
+
+  const cartProps = {
+    isCartOpen:isCartOpen,
+    toggleCart:toggleCart,
+    cartItems:cartItems,
+    setCartItems:setCartItems,
+    cartCount:cartCount,
+    setCartCount:setCartCount
+  }
+
+  const shopProps ={
+    cartItems:cartItems,
+    setCartItems:setCartItems,
+    cartCount:cartCount,
+    setCartCount:setCartCount
+  }
  
 
   return (
     
  <BrowserRouter>
  <Header />
- <Navbar
-  toggleCart={toggleCart}
-  isSearchbarOpen={isSearchbarOpen}
-   toggleSearchbar={toggleSearchbar}
-   cartItems={cartItems}
-   cartCount={cartCount}
-   isTouchNavbarOpen={isTouchNavbarOpen}
-   setIsTouchNavbarOpen={setIsTouchNavbarOpen}
-   toggleTouchNavbar={toggleTouchNavbar}
-   />
+ <Navbar {...globalProps} />
 
- <Cart
-  isCartOpen={isCartOpen}
-  toggleCart={toggleCart}
-  cartItems={cartItems}
-  setCartItems={setCartItems}
-  cartCount={cartCount}
-  setCartCount={setCartCount}
-
-  
-   />
+ <Cart {...cartProps} />
    
  <Routes>
  <Route path='/' element={<Home />} />
- <Route path='/shop' element={<Shop cartItems={cartItems} setCartItems={setCartItems} cartCount={cartCount} setCartCount={setCartCount} />} />
+ <Route path='/shop' element={<Shop {...shopProps} />} />
  <Route path='/contact' element={<Contact />} />
  <Route path="*" element={<NotFound />} />
  </Routes>
