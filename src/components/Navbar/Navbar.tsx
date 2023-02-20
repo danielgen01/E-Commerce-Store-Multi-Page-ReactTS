@@ -30,7 +30,8 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       <NavLink to="/shop" className="nav-links" id='Shop-Link'>Shop</NavLink>
       <NavLink to="/contact" className="nav-links" id='Contact-Link'>Contact</NavLink>
       </div>
-      <div className='touch-devices-nav-links'>
+
+      <div className='touch-devices-nav-burger-menu-icon'>
         {!isTouchNavbarOpen && 
         <>
         <i className='bx bx-menu' id='menu-icon' onClick={toggleTouchNavbar}></i>
@@ -40,8 +41,14 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       <>
       <i className='bx bx-x' id='close-menu-icon' onClick={toggleTouchNavbar}></i>
       </>}
-      
       </div>
+
+      <div className='touch-devices-nav-links-ctn' style={{display:isTouchNavbarOpen? "flex" : "none"}}>
+      <NavLink to="/" className="nav-links-touch-devices" id='Homepage-Link' onClick={toggleTouchNavbar}>Home</NavLink >
+      <NavLink to="/shop" className="nav-links-touch-devices" id='Shop-Link' onClick={toggleTouchNavbar}>Shop</NavLink>
+      <NavLink to="/contact" className="nav-links-touch-devices" id='Contact-Link' onClick={toggleTouchNavbar}>Contact</NavLink>
+      </div>
+      
       <div className='top-page-search-ctn' style={{display:isSearchbarOpen? "flex" : "none"}}>
       <input type="text"
       className='search-input-field'

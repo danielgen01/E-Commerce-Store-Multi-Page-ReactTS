@@ -1,6 +1,7 @@
 .Navbar{
     display: flex;
     align-items: center;
+    justify-content: space-evenly !important;
     margin-top: .5%;
 }
 
@@ -29,7 +30,7 @@
   }
 
 .search-input-field{
-    width: 100%;
+    width: 70%;
     height: 3rem;
     font-size: 1.5rem;
     border-radius: 5rem;
@@ -112,6 +113,25 @@
         cursor: pointer;
      }
 
+     .touch-devices-nav-links-ctn{
+        height: 50vh;
+        width: 100%;
+        position:absolute;
+        top: 7%;
+        background-color: rgba(0,0,0,0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15%;
+     }
+
+     .nav-links-touch-devices{
+        font-size: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+     }
+
   
 
    }
@@ -141,11 +161,11 @@
     font-size: 3rem;
     cursor: pointer;
     position: fixed;
-    margin-top: -4%;
+    margin-top: -3%;
  }
 
  #close-menu-icon{
-         font-size: 3rem;
+        font-size: 3rem;
         cursor: pointer;
      }
 
@@ -176,6 +196,10 @@
    }
 
    #close-menu-icon{
+    display: none;
+   }
+
+   .touch-devices-nav-links{
     display: none;
    }
   
