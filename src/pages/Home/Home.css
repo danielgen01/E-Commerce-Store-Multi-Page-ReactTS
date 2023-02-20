@@ -47,7 +47,15 @@
    .col-s-11 {width: 91.66%;}
    .col-s-12 {width: 100%;}
   
- 
+   .Home{
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: 205%;
+    background-color: black;
+    
+    
+ }
 
   }
   
