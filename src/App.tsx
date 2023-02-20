@@ -87,7 +87,6 @@ const App:React.FC = () => {
  <BrowserRouter>
  <Header />
  <Navbar {...globalProps} />
-
  <Cart {...cartProps} />
    
  <Routes>

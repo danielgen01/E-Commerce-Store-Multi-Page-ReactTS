@@ -1,12 +1,18 @@
 .Navbar{
     display: flex;
     align-items: center;
-    justify-content: space-evenly !important;
     margin-top: .5%;
+}
+
+#logo{
+    width: 2rem;
+    height: auto;
+    margin-left: 2%;
 }
 
 .desktop-nav-links{
     display: flex;
+    justify-content: center;
     gap: 5%;
     margin-left: 2%;
     width: 90%;
@@ -132,6 +138,10 @@
         text-decoration: none;
      }
 
+     #logo{
+        display: none;
+       }
+
     
    }
   
@@ -187,7 +197,10 @@
         text-decoration: none;
      }
 
-   
+   #logo{
+    display: none;
+   }
+
   }
   
   
@@ -220,5 +233,7 @@
    .touch-devices-nav-links{
     display: none;
    }
+
+   
   
   }
