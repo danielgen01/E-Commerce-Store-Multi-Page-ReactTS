@@ -148,6 +148,30 @@ to {margin-right: 0%;}
   }
 
 
+  /* Media Queries */
+
+
+@media only screen and (min-width: 300px) and (max-width: 599px){
+  /* For mobile phones: */
+ [class*="col-"] {
+     width: 100%;
+   }
+
+   .cart-box{
+    margin-top: -200%;
+    margin-right: 5%;
+    animation: flyFromAbove 0.5s normal;
+    animation-fill-mode: forwards;
+   }
+
+   @keyframes flyFromAbove {
+    from {margin-top: calc(0% - px)}
+    to {margin-top: 0%;}
+  }
+
+  }
+
+
 
   
 @media only screen and (min-width: 600px) and (max-width: 899px){
@@ -189,3 +213,4 @@ to {margin-right: 0%;}
  
  
  }
+

@@ -22,7 +22,7 @@
      animation-fill-mode: forwards;
 }
 
- /* CART OPEN ANIMATION */
+ /* SEARCH BAR ANIMATION */
 
 @keyframes slide {
     from {margin-top: calc(0% - px)}
@@ -109,7 +109,7 @@
      }
 
      #close-menu-icon{
-         font-size: 3rem;
+        font-size: 3rem;
         cursor: pointer;
      }
 
@@ -132,8 +132,7 @@
         text-decoration: none;
      }
 
-  
-
+    
    }
   
   
