@@ -51,15 +51,9 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       <NavLink to="/contact" className="nav-links-touch-devices" id='Contact-Link' onClick={toggleTouchNavbar}>Contact</NavLink>
       </div>
       
-      <div className='top-page-search-ctn' style={{display:isSearchbarOpen? "flex" : "none"}}>
-      <input type="text"
-      className='search-input-field'
-      placeholder='Wonach suchst du ...?'
-      />
-      </div>
+      
       
       <div className='nav-icons-ctn'>
-      <i className='bx bx-search' title='search' onClick={toggleSearchbar}></i>
       <i className='bx bxs-shopping-bag' onClick={toggleCart}></i>
       <h3 id='cart-count-number'>{cartCount}</h3>
       </div>
