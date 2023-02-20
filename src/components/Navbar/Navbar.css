@@ -168,6 +168,25 @@
         cursor: pointer;
      }
 
+     .touch-devices-nav-links-ctn{
+        height: 50vh;
+        width: 100%;
+        position:absolute;
+        top: 7%;
+        background-color: rgba(0,0,0,0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15%;
+     }
+
+     .nav-links-touch-devices{
+        font-size: 2rem;
+        color: #ffffff;
+        text-decoration: none;
+     }
+
    
   }
   

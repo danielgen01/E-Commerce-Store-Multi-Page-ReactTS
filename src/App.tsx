@@ -46,6 +46,12 @@ const App:React.FC = () => {
 
   const toggleTouchNavbar = () =>{
     setIsTouchNavbarOpen(!isTouchNavbarOpen);
+
+    if (!isTouchNavbarOpen) {
+      document.body.style.overflow = 'hidden'; // Scrollen auf der Seite deaktivieren
+    } else {
+      document.body.style.overflow = 'auto'; // Scrollen auf der Seite aktivieren
+    }
   }
 
   
