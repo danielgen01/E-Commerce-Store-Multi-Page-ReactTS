@@ -47,7 +47,7 @@
 }
 
 .bxs-shopping-bag{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     cursor: pointer;
     margin-left: 50%;
     
@@ -64,7 +64,7 @@
     font-size: .7rem;
     text-align: center;
     color: #ffffff;
-    width : 2.2rem;
+    width : 2.7rem;
     margin-left: -20%;
     margin-top: -30%;
 }  
@@ -84,13 +84,13 @@
      }
 
      #menu-icon{
-        font-size: 3rem;
+        font-size: 4rem;
         cursor: pointer;
         margin-top: -4%;
      }
 
      #close-menu-icon{
-        font-size: 3rem;
+        font-size: 4rem;
         cursor: pointer;
      }
 
@@ -98,7 +98,7 @@
         height: 50vh;
         width: 100%;
         position:absolute;
-        top: 9%;
+        top: 7%;
         background-color: rgba(0,0,0,0.9);
         display: flex;
         flex-direction: column;

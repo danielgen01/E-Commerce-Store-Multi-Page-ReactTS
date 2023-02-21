@@ -5,8 +5,8 @@
 }
 
 *{
- margin: 0;
- font-family: Montserat;
+ margin: 0 ;
+ font-family: Montserat !important;
 }
 
 /* Media Queries */
@@ -19,7 +19,7 @@
    }
 
    *{
-    font-size: 12px;
+    font-size: 13px;
    }
   
  }
