@@ -98,8 +98,8 @@
      .touch-devices-nav-links-ctn{
         height: 50vh;
         width: 100%;
-        position:absolute;
-        top: 7%;
+        position:fixed;
+        top: 10%;
         background-color: rgba(0,0,0,0.9);
         display: flex;
         flex-direction: column;
