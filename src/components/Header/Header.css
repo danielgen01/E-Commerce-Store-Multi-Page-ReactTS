@@ -1,5 +1,9 @@
 .Header{
-    background-color: black;
+    background-color: rgba(0,0,0,0.85);
     color: #ffffff;
     text-align: center;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

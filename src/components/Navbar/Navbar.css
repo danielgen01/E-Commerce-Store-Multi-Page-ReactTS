@@ -1,9 +1,9 @@
 .Navbar{
     display: flex;
     align-items: center;
-    margin-top: .5%;
-    margin-bottom: .5%;
     border-bottom: 1px solid black;
+    background-color: rgba(0,0,0,0.9);
+    color: #ffffff;
 }
 
 #logo{
@@ -20,6 +20,7 @@
     width: 90%;
     height: auto;
     border-bottom: 5px grey;
+
 }
 
 
@@ -28,14 +29,15 @@
 
 .nav-links{
     text-decoration: none;
-    color: black;
+    color: rgba(255,255,255,0.9);
     font-size: 1.5rem;
     padding: 1rem;
     border-radius: 1rem;
 }
 
 .nav-links:hover{
-    background-color: rgba(0,0,0,0.1)
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(255,255,255,1);
     
 }
 
@@ -46,7 +48,7 @@
     margin-right: 5%;
 }
 
-.bxs-shopping-bag{
+#cart-icon{
     font-size: 3.5rem;
     cursor: pointer;
     margin-left: 50%;
@@ -61,10 +63,10 @@
 #cart-count-number {
     background-color: #ff5b5b;
     border-radius: 50%;
-    font-size: .7rem;
+    font-size: .95rem;
     text-align: center;
     color: #ffffff;
-    width : 2.7rem;
+    width : 3rem;
     margin-left: -20%;
     margin-top: -30%;
 }  

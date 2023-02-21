@@ -25,7 +25,7 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
     return (
     <>
     <div className='Navbar'>
-      <img src='https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg' id='logo' />
+      <img src='https://i.ibb.co/bdqK0Ft/Download-removebg-preview.png' id='logo' />
       <div className='desktop-nav-links'>
       <NavLink to="/" className="nav-links" id='Homepage-Link'>Home</NavLink>
       <NavLink to="/shop" className="nav-links" id='Shop-Link'>Shop</NavLink>
@@ -54,7 +54,7 @@ const Navbar:React.FC<NavbarProps> = ({ toggleCart, toggleSearchbar, isSearchbar
       
       
       <div className='nav-icons-ctn'>
-      <i className='bx bxs-shopping-bag' onClick={toggleCart}></i>
+      <i className='bx bx-cart' id='cart-icon' onClick={toggleCart}></i>
       <h3 id='cart-count-number'>{cartCount}</h3>
       </div>
 
