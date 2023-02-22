@@ -99,23 +99,27 @@
      #close-menu-icon{
         font-size: 4rem;
         cursor: pointer;
-        z-index: 999999999;
      }
 
      .touch-devices-nav-links-ctn{
         height: 50vh;
         width: 100%;
         position:fixed;
-        top: 10%;
-        background-color: rgba(0,0,0,0.9);
+        top: -50%;
+        background-color: rgba(0,0,0,0.95);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 15%;
+        animation: burgerMenuDropDown 0.5s normal;
+        animation-fill-mode: forwards;
      }
 
      .nav-links-touch-devices{
+        width: 90%;
+        display: flex;
+        justify-content: center;
         font-size: 2rem;
         color: #ffffff;
         text-decoration: none;
@@ -125,6 +129,12 @@
      #logo{
         display: none;
        }
+
+
+       @keyframes burgerMenuDropDown {
+        from {top: calc(0% - px)}
+        to {top: 10%;}
+}
 
     
    }
@@ -151,13 +161,13 @@
  }
 
  #menu-icon{
-    font-size: 3rem;
+    font-size: 4rem;
     cursor: pointer;
     margin-top: -3%;
  }
 
  #close-menu-icon{
-        font-size: 3rem;
+        font-size: 4rem;
         cursor: pointer;
         z-index: 999999999;
      }
@@ -166,13 +176,15 @@
         height: 50vh;
         width: 100%;
         position:absolute;
-        top: 7%;
+        top: -100%;
         background-color: rgba(0,0,0,0.9);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 15%;
+         animation: burgerMenuDropDown 0.5s normal;
+        animation-fill-mode: forwards;
      }
 
      .nav-links-touch-devices{
@@ -180,14 +192,21 @@
         color: #ffffff;
         text-decoration: none;
         border-bottom: 2px solid #ffffff;
+        width: 90%;
+        display: flex;
+        justify-content: center;
      }
 
    #logo{
     display: none;
    }
 
+    @keyframes burgerMenuDropDown {
+        from {top: calc(0% - px)}
+        to {top: 7%;}
   }
   
+}
   
   
   
