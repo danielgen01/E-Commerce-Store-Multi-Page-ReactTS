@@ -119,29 +119,27 @@ const Shop:React.FC<ShopProps> = ({ cartItems, setCartItems, cartCount,setCartCo
 
   
 
+const cartAddBoxProps = {
+  isCartAddContainerOpen: isCartAddContainerOpen,
+  toggleCartAddContainer: toggleCartAddContainer,
+  quantity: quantity,
+  handleMinusClick : handleMinusClick,
+  handlePlusClick : handlePlusClick,
+  selectedItem: selectedItem,
+  handleAddToCartClick: handleAddToCartClick
+}
 
+const MainProps = {
+  isCartAddContainerOpen:isCartAddContainerOpen,
+  toggleCartAddContainer:toggleCartAddContainer,
+  handleAddCartIconClickShop:handleAddCartIconClickShop
+}
 
   return (
     <>
-    
-    <Main 
-  isCartAddContainerOpen={isCartAddContainerOpen}
-  toggleCartAddContainer={toggleCartAddContainer}
-  handleAddCartIconClickShop={handleAddCartIconClickShop}
-  />
-  <CartAddBox
-   isCartAddContainerOpen={isCartAddContainerOpen}
-   toggleCartAddContainer={toggleCartAddContainer}
-   quantity={quantity}
-   handleMinusClick ={handleMinusClick}
-   handlePlusClick ={handlePlusClick}
-   selectedItem={selectedItem}
-   handleAddToCartClick={handleAddToCartClick}
-   
-
-   
-  />
-       <Footer />
+    <Main {...MainProps}/> 
+    <CartAddBox {...cartAddBoxProps}/>
+    <Footer />
     </>
   )
 }
