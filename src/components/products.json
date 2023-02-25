@@ -1,0 +1,85 @@
+[
+    {
+        "name":"iPhone 14 Pro Max",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/781137_31bce3ef-9eca-4028-9177-8c0cc1e302a8.jpg?t=resize&h=600&w=800",
+        "price":1499,
+        "id": 1
+    },
+
+    {
+        "name":"iPhone 14",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/781089_d212bb52-a559-47e9-b018-a3f6859c1ab9.jpg?t=resize&h=600&w=800",
+        "price":999,
+        "id": 2
+    },
+
+    {
+        "name":"iPhone 13",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D1920/https://d1eh9yux7w8iql.cloudfront.net/product_images/512318_707bdda2-9f5b-4486-bab1-c6dc4ad2d1bc.jpg?t=resize&h=600&w=800",
+        "price":699,
+        "id": 3
+    },
+
+    {
+        "name":"iPhone 12",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/418114_43cbdc46-0a58-409c-ade3-3f1821977ecd.jpg?t=resize&h=600&w=800",
+        "price":599,
+        "id": 4
+    },
+
+    {
+        "name":"iPhone SE (2020)",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/347039_e2fa194c-d79d-4cb6-86f4-4a9ad29dd2a9.jpg?t=resize&h=600&w=800",
+        "price":399,
+        "id": 5
+    },
+
+    {
+        "name":"iPhone X 64GB",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/36833_4776bbd6-9959-4ea1-85e1-3214d47d481f.jpg?t=resize&h=600&w=800",
+        "price":439,
+        "id": 6
+    },
+
+    {
+        "name":"Macbook Pro 16 (2019)",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D1920/https://d1eh9yux7w8iql.cloudfront.net/product_images/374162_f5cfdc0c-18de-48aa-b150-0359bf861b48.jpg?t=resize&h=600&w=800",
+        "price":439,
+        "id": 7
+    },
+
+    {
+        "name":"iPad pro 11 (2021) 3.Gen",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/474635_0c643fb4-9e2d-4fd7-a6d4-4f756cd309f0.jpg?t=resize&h=600&w=800",
+        "price":879,
+        "id": 8
+    },
+
+    {
+        "name":"AirPods (2016) mit Ladecase",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/50789_5b970288-1d95-494e-a149-69779243b83a.jpg?t=resize&h=600&w=800",
+        "price":129,
+        "id": 9
+    },
+
+    {
+        "name":"AirPods 3 (2021) mit Ladecase",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/None_03e92d5c-741b-4b0b-9170-f47804ae0815.jpg?t=resize&h=600&w=800",
+        "price":219,
+        "id": 10
+    },
+
+    {
+        "name":"Kabel USB-C auf Lightning",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/623195_a868e719-68a7-4e0d-a407-d5541e442ed6.jpg?t=resize&h=600&w=800",
+        "price":25,
+        "id": 11
+    },
+
+    {
+        "name":"MagSafe Ladegerät 15W",
+        "imageSrc":"https://www.backmarket.de/cdn-cgi/image/format%3Dauto%2Cquality%3D75%2Cwidth%3D640/https://d1eh9yux7w8iql.cloudfront.net/product_images/1395865_21151737-1aa0-47cd-8dd9-354e1cbdafb4.jpg?t=resize&h=600&w=800",
+        "price": 50,
+        "id": 12
+    }
+]
