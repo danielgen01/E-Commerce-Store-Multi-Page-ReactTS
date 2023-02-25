@@ -99,6 +99,7 @@
      #close-menu-icon{
         font-size: 4rem;
         cursor: pointer;
+        z-index: 99999;
      }
 
      .touch-devices-nav-links-ctn{
