@@ -91,7 +91,7 @@ const handleRemoveFromCart = (index:number) =>{
                     <div className='item-title-and-img'
                      style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
                     <img src={item.image} id="in-cart-product-img"/>
-                    <h4>{item.title}</h4>
+                    <h4 style={{textAlign:"center",marginTop:"2%"}}>{item.title}</h4>
                     </div>
                     <div className='quantity-box' style={{display:"flex",flexDirection:"column"}}>
                     <input type="number"
